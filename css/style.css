@@ -1,0 +1,853 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(0, 0, 24);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 5rem;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Open Sans",sans-serif;
+    background: rgb(0, 0, 24);
+
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.nyobak img {
+    width: 600px;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.belajar img {
+    width: 600px;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    left: 150px;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#about {
+    margin-top: 150px;
+    background-color: rgb(0, 0, 148);
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+}
+
+.logo {
+    background-color: blue;
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 60px 15px 60px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span {
+    color: rgb(0, 162, 255);
+    font-family: 'poppins' , sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background: rgb(0, 0, 24);
+    box-shadow: 0 .2rem 1rem rgb(0, 0, 24);
+    z-index: 1;
+    border-bottom: 2px solid rgb(0, 0, 24);
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid blue;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color:white;
+}
+
+h1 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: blue;
+    width: 100%;
+    line-height: 50px;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: blue;
+    width: 100%;
+    line-height: 50px;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+h8 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(0, 162, 255);
+    width: 100%;
+    line-height: 50px;
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.tombol-menu {
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+a.tbl-biru {
+    background: blue;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tbl-biru:hover {
+    background: rgb(0, 162, 255);
+    text-decoration: none;
+}
+
+.tbl-ijo {
+    background: rgb(0, 162, 255);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 50px;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.tbl-ijo:hover {
+    background: rgb(0, 162, 255);
+    text-decoration: none;
+}
+
+.tbl-kuning {
+    background: blue;
+    font-family: 'poppins' , sans-serif;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+
+.tbl-oren{
+    background: transparent;
+    border: 2px solid rgb(0, 162, 255);
+    font-family: 'poppins' , sans-serif;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top:  1.5px;
+    left: 30px;
+    font-weight: bold;
+}
+
+.tbl-abang{
+    background: transparent;
+    border: 2px solid rgb(0, 162, 255);
+    font-family: 'poppins' , sans-serif;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top:  1.5px;
+    left: 30px;
+    font-weight: bold;
+}
+
+.tbl-kuningtai{
+    background: rgb(0, 162, 255);
+    font-family: 'poppins' , sans-serif;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'comic sans ms';
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+h4 {
+    font-family: 'comic sans ms';
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    text-align: left;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+h5 {
+    font-family: 'comic sans ms';
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    color: blue;
+    text-align: left;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.tbl-kuning:hover {
+    background: rgb(0, 162, 255);
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.image-desain img {
+    text-align: center;
+    width: 100%;
+}
+
+.image-desain img:hover {
+    animation-name: nyobak;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.owner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.kartu-owner {
+    width: 20%;
+    margin: 0 auto;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.kartu-owner img {
+    width: 80%;
+    border-radius: 50%;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.kartu-owner p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.partner {
+    width: 20%;
+    margin: 0 auto;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.partner img {
+    width: 80%;
+    border-radius: 50%;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+#contact {
+    background: blue;
+    border-radius: 30px;
+    padding: 50px 0px 50px 0px;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    color: white;
+}
+
+b {
+    color: rgb(0, 162, 255);
+    animation-name: belajar;
+    animation-duration: 4s;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+h {
+    font-family: 'comic sans ms';
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(0, 162, 255);
+}
+
+.s-box {
+    background-color: rgb(0, 0, 148);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.s-box p {
+    line-height: 1.7;
+}
+
+.pra p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.button {
+    background-color: rgb(0, 162, 255);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.button:hover {
+    background-color: transparent;
+    border: 3px solid rgb(0, 162, 255);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991.98px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 30px;
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        max-width: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: flex;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-owner {
+        width: 40%;
+    }
+
+    .kartu-owner img {
+        width: 100%;
+    }
+
+    .kartu-owner p {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .partner {
+        width: 40%;
+    }
+
+    .partner img {
+        width: 100%;
+    }
+
+    h3 {
+        font-weight: 100%;
+        font-size: 25px;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .footer-section {
+        width: 30%;
+        font-size: 15px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: blue;
+}
+
+@media screen and (max-width: 991.98px) {
+    .logo {
+        display: inline;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav .menu {
+        display: none;
+        position: relative;
+        left: 38%;
+    }
+    nav .menu.active {
+        display: flex;
+
+    }
+    nav ul li {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    .nyobak img {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .about img{
+        width: 100%;
+    }
+
+    .belajar img {
+        width: 150%;
+        position: relative;
+        left: -50px;
+        top: -40px;
+    }
+
+    .image-desain {
+        width: 70%;
+        position: relative;
+        left: 60px;
+    }
+
+    .image-desain img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        font-size: 20px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .belajar img {
+        width: 140%;
+        position: relative;
+        left: -40px;
+        top: -40px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    span{
+        font-size: 25px;
+    }
+
+    a.tbl-biru {
+        padding: 0px 10px 0px 10px;
+        position: relative;
+        left: 10%;
+    }
+
+    .service-container {
+        padding: 20px ;
+    }
+
+    .images {
+        width: 30%;
+        position: relative;
+        left: 35%;
+    }
+
+    .s-box {
+        padding: 40px;
+    }
+
+    h {
+        font-size: 25px;
+    }
+
+    .s-box p {
+        font-size: 15px;
+    }
+
+    .tbl-ijo {
+       position: relative;
+       left: 0%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .kartu-owner {
+        width: 40%;
+    }
+
+    .kartu-owner img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo {
+        font-size: 18px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .images {
+        width: 30%;
+        position: relative;
+        left: 35%;
+    }
+
+    h {
+        font-size: 25px;
+    }
+
+    .tbl-kuningtai{
+        font-size: 15px;
+    }
+
+    .belajar {
+        width: 100%;
+        position: relative;
+        left: 20px;
+    }
+
+    .s-box p {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .kartu-owner {
+        width: 40%;
+    }
+
+    .kartu-owner img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        font-size: 18px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .images {
+        width: 30%;
+        position: relative;
+        left: 35%;
+    }
+
+    .image-desain {
+        left: 15%;
+    }
+
+    .menu {
+        left: 15%;
+    }
+
+    h {
+        font-size: 25px;
+    }
+
+    .s-box p {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .kartu-owner {
+        width: 40%;
+    }
+
+    .kartu-owner img {
+        width: 100%;
+    }
+}
+
+@keyframes animasi {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes belajar {
+    from {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes nyobak {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
